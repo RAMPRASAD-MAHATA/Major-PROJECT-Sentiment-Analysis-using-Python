@@ -6,9 +6,7 @@ def main():
     st.title("Setimental Analysis WebApp")
     st.write("Buildwith Streamlit and Python")
     activities = ["Sentiment_Analysis"]
-    # choice = st.sidebar.selectbox("Select activities", activities)
-
-    # choice == "Sentiment_Analysis":
+    
     from_sent=st.text_input("Enter a sentence: ")
     if st.button("Analysis"):
         br=TextBlob(from_sent)
